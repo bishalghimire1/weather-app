@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+.main-container{
+    background-image: url('clear-sky.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+}
+
+.temp{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    
+}
+
+
+.fa-cloud-moon{
+    /* transform: scale(1,5); */
+    color: white;
+    font-size: 90px;
+}
+
+.fa-humidity{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.fa-wind{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.fa-tire-pressure-warning{
+    font-size: 12px;
+    padding: 5px;
+    
+}
+
+#temp{
+    font-size: 45px;
+    transition: font-size 1s
+}
+
+#temp:hover{
+    font-size: 60px;
+}
+#humidity{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#wind-speed{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#pressure{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:600px){
+    .temp{
+        display: flex;
+        flex-direction: column;
+    }
+}
